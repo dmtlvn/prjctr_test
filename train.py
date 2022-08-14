@@ -34,6 +34,7 @@ if __name__ == '__main__':
     metric = model.evaluate(X_train['excerpt'], X_train['target'])
     y_pred = model.predict(X_test['excerpt'] + ('test text',))
 
+
     model.save(logdir / 'model.pkl')
 
     with open(logdir / 'metrics.json', 'w') as file:
