@@ -1,0 +1,9 @@
+###Train
+
+`python train.py --datadir DATADIR`
+
+The weights, predictions and metrics are saved to `logs/`.
+
+###Start server
+`python app.py --model MODEL_FILE`
+
