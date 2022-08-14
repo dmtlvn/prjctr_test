@@ -20,7 +20,7 @@ def do_evaluate():
     return json.dumps({'score': score})
 
 
-@get('/help')
+@get('/')
 def get_help():
     return "<a href=https://www.youtube.com/watch?v=JC0tqZfMv34>JC0tqZfMv34</a>"
 
