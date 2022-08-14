@@ -1,1 +1,1 @@
-python app.py --model logs/model.pkl
+web: python app.py --model logs/model.pkl
