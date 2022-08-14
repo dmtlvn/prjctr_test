@@ -1,3 +1,4 @@
+import os
 import json
 import argparse
 from bottle import get, post, run, request, response
@@ -30,4 +31,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model.load(args.model)
-    run(host = 'localhost', port = 8080, debug = True)
+    port = os.environ.get("PORT", 8080)
+    run(host = 'localhost', port = port, reloader = True)
