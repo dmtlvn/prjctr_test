@@ -32,4 +32,4 @@ if __name__ == "__main__":
 
     model.load(args.model)
     port = os.environ.get("PORT", 8080)
-    run(host = 'localhost', port = port, reloader = True)
+    run(host = '0.0.0.0', port = port, reloader = True)
