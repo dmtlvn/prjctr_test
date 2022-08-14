@@ -7,6 +7,11 @@ from model import Model
 model = Model()
 
 
+@get('/')
+def evaluate():
+    return 'STUB'
+
+
 @post('/')
 def do_evaluate():
     try:
